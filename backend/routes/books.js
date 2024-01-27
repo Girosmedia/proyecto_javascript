@@ -17,3 +17,9 @@ router.post("/", async (req, res) => {
   console.log("Libro", newBook);
   res.json({ message: "Book Saved" });
 });
+
+router.delete("/:id", async (req, res) => {
+  const book = await Book.findByIdAndDelete(req.params.id);
+  console.log(book);
+  res.json({ message: "Book Deleted" });
+});
