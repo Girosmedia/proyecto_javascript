@@ -1,6 +1,19 @@
 const { Router } = require("express");
 const router = Router();
 
-router.get("/", (req, res) => res.json({ text: "Hello World" }));
+const Book = require("../models/Book");
 
+router.get("/", async (req, res) => {
+  console.log("get");
+  const books = await Book.find();
+  res.json(books);
+});
 module.exports = router;
+
+router.post("/", async (req, res) => {
+  const { title, author, isbn } = req.body;
+  const newBook = new Book({ title, author, isbn });
+  await newBook.save();
+  console.log("Libro", newBook);
+  res.json({ message: "Book Saved" });
+});
