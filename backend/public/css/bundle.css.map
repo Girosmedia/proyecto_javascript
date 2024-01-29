@@ -1,0 +1,1 @@
+{"version":3,"file":"css/bundle.css","mappings":"AAAA;EACE,mBAAmB;AACrB","sources":["webpack://proyecto_javascript/./frontend/styles/app.css"],"sourcesContent":["body {\n  background: #353b48;\n}\n"],"names":[],"sourceRoot":""}
