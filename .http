@@ -5,12 +5,12 @@ POST http://localhost:3000/api/books
 Content-Type: application/json
 
 {
-    "title": "Harry Potter and the Philosopher's Stone",
-    "author": "J.K. Rowling",
-    "isbn": "978-0747532699"
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "isbn": "978-0316769488"
 }
 
 
 ###
 
-DELETE http://localhost:3000/api/books/65b455c7582e8258d8ce822c
+DELETE http://localhost:3000/api/books/65b7b5f1f6f7436043372bd4

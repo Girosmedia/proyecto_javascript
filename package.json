@@ -21,6 +21,14 @@
     "multer": "^1.4.5-lts.1"
   },
   "devDependencies": {
-    "nodemon": "^3.0.3"
+    "css-loader": "^6.9.1",
+    "html-webpack-plugin": "^5.6.0",
+    "mini-css-extract-plugin": "^2.7.7",
+    "nodemon": "^3.0.3",
+    "style-loader": "^3.3.4",
+    "timeago.js": "^4.0.2",
+    "webpack": "^5.90.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
   }
 }
